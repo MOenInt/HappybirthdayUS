@@ -24,12 +24,13 @@
     "typescript": "5.8.2"
   },
   "scripts": {
-    "dev": "remotion studio",
-    "build": "remotion bundle",
-    "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc",
-    "render": "remotion render src/index.tsx BirthdayVideo out/video.mp4"
-  },
+  "dev": "remotion studio",
+  "build": "remotion bundle --outdir build",
+  "upgrade": "remotion upgrade",
+  "lint": "eslint src && tsc",
+  "render": "remotion render src/index.tsx BirthdayVideo out/video.mp4"
+}
+,
   "sideEffects": [
     "*.css"
   ]
