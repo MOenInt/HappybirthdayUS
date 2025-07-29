@@ -3,7 +3,12 @@ import { Composition } from "remotion";
 import { BirthdayVideo } from "./BirthdayVideo";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
 import "./fonts.css";
+// src/Root.tsx
+import { registerRoot } from 'remotion';
+import { BirthdayVideo } from './BirthdayVideo';
+
 registerRoot(BirthdayVideo);
+
 
 export const RemotionRoot: React.FC = () => {
   return (
